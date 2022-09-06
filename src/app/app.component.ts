@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'store-project';
+
+  products = [
+    {
+      name:'Phone XL'
+    },
+    {
+      name:'Phone Mini'
+    },
+    {
+      name:'Phone Standart'
+    }
+  ];
+
 }
