@@ -1,10 +1,13 @@
-<div>
-  <app-top-bar></app-top-bar>
-</div>
-<div>
-  <h2>Products</h2>
-  <app-product-list *ngFor="let product of products" [productName]="product.name"></app-product-list>
-</div>
-<div>
-  <app-product-alert></app-product-alert>
+<div class="container-fluid p-0">
+  <div>
+    <app-top-bar></app-top-bar>
+  </div>
+  <div class="mx-3">
+    <h2 class="text-black-50">Products</h2>
+    <app-product-list *ngFor="let product of products" [productName]="product.name"
+      [productDescription]="product.description"></app-product-list>
+  </div>
+  <div class="mx-3">
+    <app-product-alert></app-product-alert>
+  </div>
 </div>
